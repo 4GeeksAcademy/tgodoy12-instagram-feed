@@ -34,12 +34,23 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
+
                       <div class="modal-body">
-                        ...
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-light border" type="button"><i class="fa-solid fa-camera"></i></button>
+                          <button class="btn btn-light border" type="button"><i class="fa-solid fa-location-dot"></i></button>
+                        </div>
+
                       </div>
+
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-success">Publish</button>
                       </div>
                     </div>
                   </div>
@@ -69,27 +80,27 @@
 
         <!-- navigational tab -->
         <nav>
-          <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+          <div class="nav nav-tabs justify-content-center pb-1 border border-0" id="nav-tab" role="tablist">
+            <button class="nav-link active border border-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+            <button class="nav-link border border-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
             
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+          <div class="tab-pane fade show active p pt-1" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
             <!-- photo gallery -->
           <div class="container text-center">
 
             <!-- first row -->
             <div class="row">
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=1">
               </div>
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=2">
               </div>
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=3">
               </div>
             </div>
             <!-- end first row -->
@@ -97,13 +108,13 @@
             <!-- second row -->
             <div class="row">
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=4">
               </div>
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=5">
               </div>
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=6">
               </div>
             </div>
             <!-- end second row -->
@@ -111,13 +122,13 @@
             <!-- third row -->
             <div class="row">
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=7">
               </div>
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=8">
               </div>
               <div class="col-md-4 mb-4">
-                <img src="https://picsum.photos/400">
+                <img src="https://picsum.photos/400?random=9">
               </div>
             </div>
             <!-- end third row -->
@@ -131,22 +142,22 @@
           <!-- single image gallery -->
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
 
-            <div class="container text-center">   
+            <div class="container text-center pt-1">   
               <div class="row">
                 
                 <!-- first photo -->
                 <div class="col-md-12 mb-4">
 
-                  <div class="card text-center mx-auto" style="width: 600px;">
+                  <div class="card text-center mx-auto" style="width: 601px;">
                     <div class="card-header d-flex justify-content-between">
                       <p class="fs-3">The greatness of Croatia</p>
                       <p class="fs-6">28/1</p>
                     </div>
                     <div class="card-body p-0 m-0" style="height: 600px;">
-                      <img src="https://picsum.photos/600">
+                      <img src="https://picsum.photos/600?random=1">
                     </div>
-                    <div class="card-footer text-start text-body-secondary">
-                      <p><strong>45615156 likes</strong></p>
+                    <div class="card-footer text-start text-body">
+                      <p class="mb-0"><strong>501 likes</strong></p>
                       <p>This is an example text</p>
                     </div>
                   </div>
@@ -157,16 +168,16 @@
                 <!-- second photo -->
                 <div class="col-md-12 mb-4">
 
-                  <div class="card text-center mx-auto" style="width: 600px;">
+                  <div class="card text-center mx-auto" style="width: 601px;">
                     <div class="card-header d-flex justify-content-between">
                       <p class="fs-3">The greatness of Croatia</p>
                       <p class="fs-6">28/1</p>
                     </div>
                     <div class="card-body p-0 m-0" style="height: 600px;">
-                      <img src="https://picsum.photos/600">
+                      <img src="https://picsum.photos/600?random=2">
                     </div>
-                    <div class="card-footer text-start text-body-secondary">
-                      <p><strong>45615156 likes</strong></p>
+                    <div class="card-footer text-start text-body">
+                      <p class="mb-0"><strong>28 likes</strong></p>
                       <p>This is an example text</p>
                     </div>
                   </div>
@@ -177,16 +188,16 @@
                 <!-- third photo -->
                 <div class="col-md-12 mb-4">
 
-                  <div class="card text-center mx-auto" style="width: 600px;">
+                  <div class="card text-center mx-auto" style="width: 601px;">
                     <div class="card-header d-flex justify-content-between">
                       <p class="fs-3">The greatness of Croatia</p>
                       <p class="fs-6">28/1</p>
                     </div>
                     <div class="card-body p-0 m-0" style="height: 600px;">
-                      <img src="https://picsum.photos/600">
+                      <img src="https://picsum.photos/600?random=3">
                     </div>
-                    <div class="card-footer text-start text-body-secondary">
-                      <p><strong>45615156 likes</strong></p>
+                    <div class="card-footer text-start text-body">
+                      <p class="mb-0"><strong>456 likes</strong></p>
                       <p>This is an example text</p>
                     </div>
                   </div>
